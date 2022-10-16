@@ -1,0 +1,82 @@
+/* 主体设置 */
+html, body{
+    margin: 0 auto;
+    padding: 0; 
+}
+
+html{
+    font-size: 10px;
+    background-color: floralwhite;
+}
+
+body{
+    width: 80%;
+    margin: 0 auto;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+}
+
+/* 文字设置 */
+h1{
+    font-size: 5rem;
+    text-align: center;
+    color:black;
+}
+
+div,p{
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+}
+
+form{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 2em;
+}
+input{
+    font-size: 2rem;
+    height: 32px;
+}
+input[type="text"]{
+    flex: 3;
+}
+input[type="submit"]{
+    flex: 1;
+    margin-left: 1rem;
+    background: #333;
+    border: 0;
+    color: white;
+}
+
+/* 滚动框 */
+
+.list{
+    /* background-color: whitesmoke; */
+    padding: 5%;
+    flex: 5;
+    overflow-Y: auto;
+    position: relative;
+}
+    .list .rowup {
+        -webkit-animation: 5s rowup linear infinite normal;
+        animation: 5s rowup linear infinite normal;
+        position: relative;
+    }
+@keyframes rowup {
+        0% {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+ 
+        100% {
+            -webkit-transform: translate3d(0, -50px, 0);
+            transform: translate3d(0, -50px, 0);
+        }
+    }
+ 
